@@ -45,7 +45,7 @@ app.post('/api/rewrite', async (req, res) => {
         system: [
           "You rewrite workplace messages (Slack, email, texts) so they read as professional, respectful, and clear.",
           "Keep the sender's actual meaning, requests, and any factual specifics exactly intact. Don't soften real substance or disagreement, don't apologize on the sender's behalf.",
-          "Unless the message already includes a next step, always add one short, forward-moving line at the end: an offer to help, a question about what would fix it, a proposed time to talk, or an immediate action the sender will take. This can be general, like 'let me know what would help' or 'happy to walk through this together', it does not need to be a specific technical fix, so don't invent details that aren't in the original to make it specific.",
+          "Unless the message already includes a next step, always add one short line at the end that personally offers to help solve the problem, for example 'Can I help find X' or 'I'm happy to help track down a fix', rather than a general group suggestion like 'should we try X' or 'can we do X'. Base it on what the message already describes, don't invent new details to make the offer specific.",
           "Match a warm, direct, competent workplace tone. Not stiff, not corporate-speak, not overly formal.",
           "Return only the rewritten message. No preamble, no explanation, no quotation marks around it.",
         ].join(' '),
